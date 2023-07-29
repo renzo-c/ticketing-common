@@ -15,9 +15,16 @@
     "pub": "yarn version --patch && yarn build && yarn publish"
   },
   "dependencies": {
-    "typescript": "^5.1.6"
+    "typescript": "^5.1.6",
+    "@types/express": "^4.17.14",
+    "cookie-session": "^2.0.0",
+    "express": "^4.18.2",
+    "express-validator": "^6.14.2",
+    "jsonwebtoken": "^9.0.1"
   },
   "devDependencies": {
-    "del-cli": "^5.0.0"
+    "del-cli": "^5.0.0",
+    "@types/cookie-session": "^2.0.44",
+    "@types/jsonwebtoken": "^9.0.2"
   }
 }
