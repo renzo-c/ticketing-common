@@ -1,7 +1,21 @@
 {
-  "name": "@rcnptickets/common",
+  "name": "@rcnp-tickets/common",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "./build/index.js",
+  "types": "./build/index.d.ts",
+  "files": [
+    "build/**/*"
+  ],
   "author": "Renzo Navarro",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "clean": "del-cli ./build/*",
+    "build": "yarn clean && tsc"
+  },
+  "dependencies": {
+    "typescript": "^5.1.6"
+  },
+  "devDependencies": {
+    "del-cli": "^5.0.0"
+  }
 }
