@@ -10,7 +10,9 @@
   "license": "MIT",
   "scripts": {
     "clean": "del-cli ./build/*",
-    "build": "yarn clean && tsc"
+    "build": "yarn clean && tsc",
+    "commit": "git add . && git commit -m",
+    "pub": "yarn version --patch && yarn build && yarn publish"
   },
   "dependencies": {
     "typescript": "^5.1.6"
