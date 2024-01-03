@@ -1,10 +1,10 @@
 /**
- * Importing everything from each file to export it again. 
- * This will make easier for people who use the library to directly 
+ * Importing everything from each file to export it again.
+ * This will make easier for people who use the library to directly
  * import each error handler/middleware without specifying the whole path
  */
 export * from "./errors/bad-request-error";
-export * from "./errors/custom-error"
+export * from "./errors/custom-error";
 export * from "./errors/database-connection-error";
 export * from "./errors/not-authorized-error";
 export * from "./errors/not-found-error";
@@ -14,3 +14,9 @@ export * from "./middlewares/current-user";
 export * from "./middlewares/error-handlers";
 export * from "./middlewares/require-auth";
 export * from "./middlewares/validate-requests";
+
+export * from "./events/base-listener";
+export * from "./events/base-publisher";
+export * from "./events/subjects";
+export * from "./events/ticket-created-event";
+export * from "./events/ticket-updated-event";
